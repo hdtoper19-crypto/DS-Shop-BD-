@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Top-Up - Demo Store</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary-color: #6366f1;
+            --accent-color: #22c55e;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #334155;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .product-item {
+            background-color: var(--bg-color);
+            border: 1px solid #334155;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .product-item:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary-color);
+        }
+
+        .btn {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BS Top-Up - Demo Store</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>গেম সিলেক্ট করুন</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <h3>Free Fire Diamonds</h3>
+                    <p>Instant Top-Up</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+                <div class="product-item">
+                    <h3>PUBG Mobile UC</h3>
+                    <p>Instant Top-Up</p>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
